@@ -7,9 +7,9 @@ trigger:
 - main
 
 pool:
-  name = "Test"
-  agent = "Bhimbai-12345"
 
+  name: Test
+  demands: agent.name -equals Bhimbai-12345
 steps:
 - task: UiPathTest@6
   inputs:

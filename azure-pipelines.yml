@@ -11,10 +11,12 @@ pool:
   Agent = "Bhimbai-12345"
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: UiPathTest@6
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'UiPath_Cloud_Connection_Test'
+    testProjectPath: 'project.json'
+    folderName: 'AzureCICDTesting'
+    testReportDestination: 'result.json'
+    traceLevel: 'Information'
+    

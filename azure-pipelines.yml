@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name = "Test"
+  name = "Bhimbai"
   Agent = "Bhimbai-12345"
 
 steps:

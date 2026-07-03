@@ -8,7 +8,7 @@ trigger:
 
 pool:
   name = "Bhimbai"
-  Agent = "Bhimbai-12345"
+  agent = "Bhimbai-12345"
 
 steps:
 - task: UiPathTest@6
